@@ -283,7 +283,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         >
                                             Telescope
                                         </a>
-                                        , and more.
+                                        , and more...
                                     </p>
                                 </div>
                             </div>
