@@ -34,7 +34,8 @@ Route::get('/', function () {
 // 	return inertia('Test');
 // })->name('test');
 
-Route::get('/t', TestController::class)->name('test');
+Route::get('/t', [TestController::class, 'index'])->name('test');
+Route::get('/create', [TestController::class, 'create'])->name('create');
 
 Route::get('/dashboard', function () {
 	return Inertia::render('Dashboard');

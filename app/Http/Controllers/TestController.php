@@ -8,10 +8,15 @@ namespace App\Http\Controllers;
 
 class TestController extends Controller
 {
-	public function __invoke()
+	public function index()
 	{
-        $a= 123;
+		$a = 123;
 
 		return inertia('Test', compact('a'));
+	}
+
+	public function create()
+	{
+		return inertia('CreateUser');
 	}
 }
