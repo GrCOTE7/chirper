@@ -1,7 +1,7 @@
 import { Head } from '@inertiajs/react';
 import Layout from '@/Shared/Layout.jsx';
 
-export default function Test({a}) {
+export default function Test({ a }) {
     return (
         <Layout>
             <Head title="Test" />
@@ -12,7 +12,7 @@ export default function Test({a}) {
                             <div className="card-header">Test</div>
                             <div className="card-body">
                                 Welcome to our application!
-                                <hr/> <b>{a}</b>
+                                <hr /> <b>{a}</b>
                             </div>
                         </div>
                     </div>
