@@ -1,7 +1,30 @@
+Tip:
+
+Fish-shell
+https://grafikart.fr/tutoriels/fish-shell-1014
+(CLI with autocomplete)
+
+## INERTIA
+
 Doc Inertia:
 
-https://inertiajs.com/routing
+https://inertiajs.com
 
+GA - 1H :
+https://www.youtube.com/watch?v=y9Zd0DZfHUg&pp=ygUUdHV0byBsYXJhdmVsIGluZXJ0aWE%3D 
+
+17 videos (EN) - Laravel Daily
+https://www.youtube.com/watch?v=swelKdHlvco
+
+24 videos (EN) - Laracast
+https://www.youtube.com/watch?v=O-pqsfzgfIA&list=PL3VM-unCzF8jeu0m8pSz6-Q9TwV74AbvW
+
+
+Pure React -20 videos:
+https://www.youtube.com/watch?v=8cROwP0wzXs&list=PL6tf8fRbavl3dQ7r-VtsX4sISXmElz45G
+
+Create InertiaJS Pagination Component - Reddit Clone with Laravel
+https://www.youtube.com/watch?v=jQZ_Tv62yPQ
 ---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
