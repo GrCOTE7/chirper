@@ -29,8 +29,8 @@ Route::get('/', function () {
 	]);
 });
 
-Route::get('t', function () {
-	return 'ok';
+Route::get('/t', function () {
+	return inertia('Test');
 })->name('test');
 
 Route::get('/dashboard', function () {

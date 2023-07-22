@@ -10,9 +10,6 @@ https://grafikart.fr/tutoriels/fish-shell-1014
 
 https://www.naimboughattas.fr/articles/application-laravel-react-inertia-5-mins
 
-
-
-
 https://kinsta.com/fr/blog/developpeur-laravel/
 
 https://geekyants.com/blog/installing-inertia---react-in-laravel-project/
