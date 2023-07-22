@@ -12,7 +12,7 @@ export default function Test({a}) {
                             <div className="card-header">Test</div>
                             <div className="card-body">
                                 Welcome to our application!
-                                <hr/> {a}
+                                <hr/> <b>{a}</b>
                             </div>
                         </div>
                     </div>
