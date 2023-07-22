@@ -10,7 +10,7 @@ class TestController extends Controller
 {
 	public function __invoke()
 	{
-		// echo 'oki';
+		echo 'oki21abc';
 
 		return inertia('Test');
 	}

@@ -5,6 +5,7 @@
  */
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TestController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -29,9 +30,11 @@ Route::get('/', function () {
 	]);
 });
 
-Route::get('/t', function () {
-	return inertia('Test');
-})->name('test');
+// Route::get('/t', function () {
+// 	return inertia('Test');
+// })->name('test');
+
+Route::get('/t', TestController::class)->name('test');
 
 Route::get('/dashboard', function () {
 	return Inertia::render('Dashboard');
