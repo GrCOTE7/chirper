@@ -10,8 +10,8 @@ class TestController extends Controller
 {
 	public function __invoke()
 	{
-		echo 'oki21abc';
+        $a= 123;
 
-		return inertia('Test');
+		return inertia('Test', compact('a'));
 	}
 }
