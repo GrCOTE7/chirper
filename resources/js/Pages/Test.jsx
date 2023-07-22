@@ -11,7 +11,7 @@ export default function Test({ a }) {
                         <div className="card">
                             <div className="card-header">Test</div>
                             <div className="card-body">
-                                Welcome to our application!
+                                Welcome to our application !
                                 <hr /> <b>{a}</b>
                             </div>
                         </div>

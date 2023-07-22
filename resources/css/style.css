@@ -3,6 +3,18 @@ body {
   font-size: 18px;
 }
 
-.container {
-  margin: 20px;
+div .container {
+  max-width: 100% !important;
+  padding: 0 2%;
+}
+
+.nav-link,
+.navbar-brand {
+  padding: 0 10px;
+  line-height: 0.9;
+}
+
+.slogan {
+  font-size: 13.4px;
+  color: grey;
 }/*# sourceMappingURL=style.css.map */
