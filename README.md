@@ -1,10 +1,24 @@
 Tip:
 
-Fish-shell
+Fish-shell (CLI autocompletion)
 https://grafikart.fr/tutoriels/fish-shell-1014
 (CLI with autocomplete)
 
 ## INERTIA
+
+À lire:
+
+https://www.naimboughattas.fr/articles/application-laravel-react-inertia-5-mins
+
+
+
+
+https://kinsta.com/fr/blog/developpeur-laravel/
+
+https://geekyants.com/blog/installing-inertia---react-in-laravel-project/
+
+https://kinsta.com/fr/blog/inertia-laravel/
+
 
 Doc Inertia:
 
