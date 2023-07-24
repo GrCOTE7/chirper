@@ -14,9 +14,4 @@ class TestController extends Controller
 
 		return inertia('Test', compact('a'));
 	}
-
-	public function create()
-	{
-		return inertia('CreateUser');
-	}
 }

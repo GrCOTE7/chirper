@@ -12,6 +12,9 @@ https://www.naimboughattas.fr/articles/application-laravel-react-inertia-5-mins
 
 https://kinsta.com/fr/blog/developpeur-laravel/
 
+GA :
+https://www.twitch.tv/videos/1862360361
+
 https://geekyants.com/blog/installing-inertia---react-in-laravel-project/
 
 https://kinsta.com/fr/blog/inertia-laravel/

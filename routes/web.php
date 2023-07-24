@@ -6,6 +6,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -35,7 +36,8 @@ Route::get('/', function () {
 // })->name('test');
 
 Route::get('/t', [TestController::class, 'index'])->name('test');
-Route::get('/create', [TestController::class, 'create'])->name('create');
+Route::get('/create', [UserController::class, 'create'])->name('create');
+Route::post('/users', [UserController::class, 'store'])->name('store');
 
 Route::get('/dashboard', function () {
 	return Inertia::render('Dashboard');

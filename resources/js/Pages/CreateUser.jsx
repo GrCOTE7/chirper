@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "@/Shared/Layout";
 import { Inertia } from "@inertiajs/inertia";
 
-export default function CreateUser() {
+export default function CreateUser({ users }) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
 
@@ -12,11 +12,17 @@ export default function CreateUser() {
         Inertia.post("/users", {
             name: name,
             email: email,
+            password: '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'
         });
     }
 
     return (
         <Layout>
+            <div className="container">
+                {users.map(user => (
+                    <div key={user.id}>* {user.name}</div>
+                ))}
+            </div>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-8">
@@ -28,7 +34,7 @@ export default function CreateUser() {
                                         <label htmlFor="name">Name</label>
                                         <input
                                             type="text"
-                                            className="form-control"
+                                            className="form-control rounded"
                                             id="name"
                                             value={name}
                                             onChange={(e) =>
@@ -40,14 +46,15 @@ export default function CreateUser() {
                                         <label htmlFor="email">Email</label>
                                         <input
                                             type="email"
-                                            className="form-control"
+                                            className="form-control rounded"
                                             id="email"
                                             value={email}
                                             onChange={(e) =>
                                                 setEmail(e.target.value)
                                             }
                                         />
-                                    </div><br />
+                                    </div>
+                                    <br />
                                     <button
                                         type="submit"
                                         className="btn btn-outline-primary"
