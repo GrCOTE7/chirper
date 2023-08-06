@@ -4,6 +4,7 @@
  * (ɔ) GrCOTE7 - 2001-2023.
  */
 
+use App\Http\Controllers\ChirpController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\UserController;
@@ -52,5 +53,9 @@ Route::middleware('auth')->group(function () {
 	Route::delete('/profile', [ProfileController::class, 'destroy'])
 		->name('profile.destroy');
 });
+
+Route::resource('chirps', ChirpController::class)
+	->only(['index', 'store'])
+	->middleware(['auth', 'verified']);
 
 require __DIR__ . '/auth.php';
