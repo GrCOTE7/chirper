@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "@/Shared/Layout";
 import { Inertia } from "@inertiajs/inertia";
+import { Head } from "@inertiajs/react";
 
 export default function CreateUser({ users }) {
     const [name, setName] = useState("");
@@ -18,10 +19,14 @@ export default function CreateUser({ users }) {
 
     return (
         <Layout>
+            <Head title="Create User" />
+
             <div className="container">
-                {users.map(user => (
-                    <div key={user.id}>* {user.name}</div>
-                ))}
+                {users.length} user{ users.length>1 && <span>s</span> } :
+                {
+                    users.map(user => (
+                        <div key={user.id}><li>{user.name}</li></div>
+                    ))}
             </div>
             <div className="container">
                 <div className="row justify-content-center">

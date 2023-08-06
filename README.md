@@ -4,15 +4,18 @@ Fish-shell (CLI autocompletion)
 https://grafikart.fr/tutoriels/fish-shell-1014
 (CLI with autocomplete)
 
+# Bootcamp Chirps
+ / https://bootcamp.laravel.com/inertia/creating-chirps
+
 ## INERTIA
 
 À lire:
 
-https://www.naimboughattas.fr/articles/application-laravel-react-inertia-5-mins
+x https://www.naimboughattas.fr/articles/application-laravel-react-inertia-5-mins
 
 https://kinsta.com/fr/blog/developpeur-laravel/
 
-GA :
+GA : Lives coding
 https://www.twitch.tv/videos/1862360361
 
 https://geekyants.com/blog/installing-inertia---react-in-laravel-project/

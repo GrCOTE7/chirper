@@ -17,6 +17,11 @@ div .container {
     line-height: 0.9;
 }
 
+.nav-link:hover {
+    color: red;
+    text-shadow: 0 0 5px yellow;
+}
+
 .slogan {
     font-size: 13.4px;
     color: grey;

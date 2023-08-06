@@ -13,10 +13,9 @@ class UserController extends Controller
 {
 	public function create()
 	{
-    $users = User::all();
-		return
-         inertia('CreateUser', compact('users'));
-        
+		$users = User::all();
+
+		return inertia('CreateUser', compact('users'));
 	}
 
 	public function store(Request $request)
@@ -27,7 +26,7 @@ class UserController extends Controller
 			'password' => 'required',
 		]);
 
-		$user  = User::create($validatedData);
+		$user = User::create($validatedData);
 
 		return redirect()->back()
 			->with('user')
