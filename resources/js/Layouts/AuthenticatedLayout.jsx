@@ -104,12 +104,14 @@ export default function Authenticated({ user, header, children }) {
 
                     <div className="pt-4 pb-1 border-t border-gray-200">
                         <div className="px-4">
-                            <div className="font-medium text-base text-gray-800">{user.name}</div>
-                            <div className="font-medium text-sm text-gray-500">{user.email}</div>
+                            <div className="font-medium text-base text-gray-400">{user.name}</div>
+                            <div className="font-medium text-sm text-gray-300">{user.email}</div>
                         </div>
 
                         <div className="mt-3 space-y-1">
-                            <Dropdown.Link href={route('chirps.index')}>Chirps</Dropdown.Link>
+                            <hr className="my-2 border-gray-300" />
+                            <ResponsiveNavLink href={route('chirps.index')}>Chirps7</ResponsiveNavLink>
+                            <hr className="my-2 border-gray-300" />
                             <ResponsiveNavLink href={route('profile.edit')}>Profile</ResponsiveNavLink>
                             <ResponsiveNavLink method="post" href={route('logout')} as="button">
                                 Log Out
