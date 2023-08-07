@@ -4,7 +4,8 @@ import InputError from '@/Components/InputError';
 import PrimaryButton from '@/Components/PrimaryButton';
 import { useForm, Head } from '@inertiajs/react';
 
-export default function Index({ auth }) {
+
+export default function Index({ chirps, auth }) {
     const { data, setData, post, processing, reset, errors } = useForm({
         message: '',
     });
@@ -14,9 +15,17 @@ export default function Index({ auth }) {
         post(route('chirps.store'), { onSuccess: () => reset() });
     };
 
+    console.log(chirps);
+
     return (
         <AuthenticatedLayout user={auth.user}>
             <Head title="Chirps" />
+
+            <div className="max-w-2xl mx-auto pt-4 pl-6">
+                {chirps.map(
+                    chirp => <div key={chirp.id}>{chirp.message}</div>
+                )}
+            </div>
 
             <div className="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
                 <form onSubmit={submit}>

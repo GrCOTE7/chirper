@@ -16,10 +16,14 @@ class ChirpController extends Controller
 {
 	/**
 	 * Display a listing of the resource.
+	 * // 2do user_id + relation.
 	 */
 	public function index(): Response
 	{
-		return Inertia::render('Chirps/index');
+		return Inertia::render(
+			'Chirps/index',
+			['chirps' => Chirp::all()]
+		);
 	}
 
 	/**
