@@ -24,6 +24,7 @@ use Inertia\Inertia;
  */
 
 Route::get('/', function () {
+
 	return Inertia::render('Welcome', [
 		'canLogin'       => Route::has('login'),
 		'canRegister'    => Route::has('register'),
@@ -32,9 +33,9 @@ Route::get('/', function () {
 	]);
 });
 
-// Route::get('/t', function () {
+// Route::get('/', function () {
 // 	return inertia('Test');
-// })->name('test');
+// })->name('testi');
 
 Route::get('/t', [TestController::class, 'index'])->name('test');
 Route::get('/create', [UserController::class, 'create'])->name('create');
